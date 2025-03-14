@@ -1,0 +1,37 @@
+// scss variables --------------------------------------------------------------------
+    $color-bg: #cddeec;
+
+// document --------------------------------------------------------------------------
+html {
+    background-color: $color-bg;
+}
+
+// typography ------------------------------------------------------------------------
+
+
+// game elements----------------------------------------------------------------------
+
+#game-board {
+    background-color: rgb(27, 27, 58);
+    padding: 1rem;
+    border-radius: 10%;
+    width: max-content;
+
+    display: grid;
+    grid-template-columns: repeat(7, 6rem);
+}
+
+.column {
+    display: grid;
+    grid-template-rows: repeat(6, 6rem);
+    place-items: center;
+    cursor: pointer;
+}
+
+.cell {
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-bg;
+    border-radius: 50%;
+    border: 2px solid black;
+}
