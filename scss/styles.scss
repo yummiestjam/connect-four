@@ -1,5 +1,8 @@
 // scss variables --------------------------------------------------------------------
-    $color-bg: #cddeec;
+    $color-bg: #ece0cd;
+    $color-text: #ffffff;
+    $color-desk-side: #4e3322;
+    $color-desk-top: #84624d;
 
 // document --------------------------------------------------------------------------
 html {
@@ -8,6 +11,43 @@ html {
 
 // typography ------------------------------------------------------------------------
 
+p,
+h1,
+h2,
+h3 {
+    font-family: "Sour Gummy", sans-serif;
+    color: $color-text;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+}
+
+// layout ----------------------------------------------------------------------------
+
+#wrapper {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desk {
+    width: 250%;
+    transform: translateY(-2rem);
+    z-index: -1;
+}
+
+.desk-top {
+    height: 8rem;
+    background-color: $color-desk-top;
+}
+
+.desk-side {
+    height: 2rem;
+    background-color: $color-desk-side;
+}
 
 // game elements----------------------------------------------------------------------
 

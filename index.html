@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect Four</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- dynamically generate cells on board -->
-    <section id="game-board"></section>
-    <script src="scripts/script.js"></script>
+    <div id="wrapper">
+        <!-- dynamically generate cells on board -->
+        <section id="title">
+            <h1>Connect Four</h1> 
+        </section>
+        <section id="game-board"></section>
+        <div class="desk desk-top"></div>
+        <div class="desk desk-side"></div>
+        <script src="scripts/script.js"></script>
+    </div>
 </body>
 </html>

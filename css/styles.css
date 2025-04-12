@@ -1,0 +1,65 @@
+html {
+  background-color: #ece0cd;
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: "Sour Gummy", sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+}
+
+#wrapper {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desk {
+  width: 250%;
+  transform: translateY(-2rem);
+  z-index: -1;
+}
+
+.desk-top {
+  height: 8rem;
+  background-color: #84624d;
+}
+
+.desk-side {
+  height: 2rem;
+  background-color: #4e3322;
+}
+
+#game-board {
+  background-color: rgb(27, 27, 58);
+  padding: 1rem;
+  border-radius: 10%;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(7, 6rem);
+}
+
+.column {
+  display: grid;
+  grid-template-rows: repeat(6, 6rem);
+  place-items: center;
+  cursor: pointer;
+}
+
+.cell {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ece0cd;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=styles.css.map */
