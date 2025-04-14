@@ -12,13 +12,26 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- dynamically generate cells on board -->
+        <section class="popup" id="alert-popup">
+            <h2>That column is full!</h2>
+        </section>
+        <section class="popup" id="result-popup">
+            <h2 id="result">You Win!</h2>
+            <div id="popup-buttons">
+                <button id="replay">Replay</button>
+                <button id="view-board">View Board</button>
+            </div>
+        </section>
         <section id="title">
             <h1>Connect Four</h1> 
         </section>
         <section id="game-board"></section>
         <div class="desk desk-top"></div>
         <div class="desk desk-side"></div>
+        <div class="desk-legs">
+            <div class="desk-leg"></div>
+            <div class="desk-leg"></div>
+        </div>
         <script src="scripts/script.js"></script>
     </div>
 </body>
